@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  }
+
+ nav {
+  background-color: #333;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  }
+
+  .logo {
+    display: inline-block;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-link a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+  }
+  
+  .nav-link a:hover {
+    border-bottom: 2px solid green;
+  }
+
+.banner {
+  height: 150px;
+  width: 100%;
+  background-image:url(../images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-text {
+  right: 0;
+  position: fixed;
+  color: skyblue;
+}
+
+.page-wrapper {
+  background-color:  #acb7ae;
+}
+
+.content-container {
+  background-color: #333;
+  border: 2px solid;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+  width: 992px;
+  color: #fff;
+}
+
+/* Grid Layout */
+
+
+
+
+
+
+
+
+
+h1,
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
