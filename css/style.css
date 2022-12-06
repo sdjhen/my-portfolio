@@ -81,9 +81,7 @@ body {
   grid-template-areas: 
   "project-1 project-2"
   "project-3 project-4" 
-  
   ; 
-  
 }
 
 .expand {
@@ -106,7 +104,7 @@ overflow: hidden;
   grid-area: project-1;
   background-image: url(../images/02-portfolio-1.jpg);
   border-radius: 5px;
-  height: 50px;
+  height: 120px;
   width: 90%;
   display: block;
   margin: auto;
@@ -140,6 +138,25 @@ overflow: hidden;
   width: 85%;
   display: block;
   margin: auto;
+}
+
+/* Footer Styling */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer a:hover {
+  color: #c7af6b;
+}
+
+.footer .contact-info > * {
+  margin-right: 50px;
 }
 
 
