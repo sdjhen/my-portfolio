@@ -81,7 +81,7 @@ body {
   display: grid;
   min-height: 300px;
   height: 50vh;
-   grid-template-rows: 200px 200px 200px 200px 200px;
+   grid-template-rows: 200px 200px 200px 200px ;
   grid-template-columns: 1fr 1fr; 
   grid-template-areas: 
   "project-1 project-2"
@@ -164,8 +164,66 @@ overflow: hidden;
   margin-right: 50px;
 }
 
+/* Media Queries */
+@media only screen and (max-width:768px) {
+  #navbar {
+    flex-direction: column;
+    padding: 20px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .nav-link a:hover {
+    border-bottom: none;
+  }
 
+  .logo {
+    display: none;
+  }
+
+ .content-container {
+    max-width: 475px;
+  }
+
+.portfolio-grid-area {
+  margin: 0;
+  padding: 0;
+  display: inline;
+grid-template-rows: 200px 200px 200px 200px;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"project-1"
+"project-2"
+"project-3"
+"project-4"
+;
+}
+}
+
+@media only screen and (max-width: 540px) {
+  .logo {
+    display: none;
+  }
+
+  .content-container {
+    max-width: 350px;
+  }
+
+  .portfolio-grid-area {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "project-1"
+  "project-2"
+  "project-3"
+  "project-4"
+  ;
+  }
+}
 
 
 
