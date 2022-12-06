@@ -4,27 +4,31 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 ;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background: #acb7ae;
   }
 
+  /* Navigation */
  nav {
   background-color: #333;
   padding: 0 20px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  top: 0;
+  left: 0;
   }
 
   .logo {
     display: inline-block;
     color: #fff;
-    position: fixed;
-    left: 0;
+    left: 10px;
+    position: absolute;
     }
 
-  .nav-links {
+     .nav-links {
     list-style: none;
     display: flex;
   }
@@ -41,7 +45,7 @@ body {
   }
 
 .banner {
-  height: 150px;
+  height: 200px;
   width: 100%;
   background-image:url(../images/02-hero-bg.jpg);
   background-repeat: no-repeat;
@@ -50,45 +54,97 @@ body {
 
 .banner-text {
   right: 0;
-  position: fixed;
+  position: absolute;
   color: skyblue;
-}
-
-.page-wrapper {
-  background-color:  #acb7ae;
 }
 
 .content-container {
   background-color: #333;
   border: 2px solid;
+  border-radius: 5px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   padding: 0 10px;
   width: 992px;
   color: #fff;
+  overflow: hidden;
 }
 
 /* Grid Layout */
-
-
-
-
-
-
-
-
-
-h1,
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.portfolio-grid-area {
+  display: grid;
+  min-height: 200px;
+  height: 50vh;
+  grid-template-rows: 200px 200px 200px 200px 200px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "project-1"
+  "project-2"
+  "project-3"
+  "project-4"
+  ;
+  margin: 25px;
 }
 
-p {
-  margin: 0;
+.expand {
+transition: all 0.2s ease-in-out;
+overflow: hidden;
 }
+
+.expand:hover {
+  transform: scale(1.1);
+}
+
+.card-heading {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-left: 45px;
+}
+
+#project-1 {
+  grid-area: project-1;
+  background-image: url(../images/02-portfolio-1.jpg);
+  border-radius: 5px;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+#project-2 {
+  grid-area: project-2;
+  background-image: url(../images/02-portfolio-2.jpg);
+  border-radius: 5px;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+#project-3 {
+  grid-area: project-3;
+  background-image: url(../images/02-portfolio-3.jpg);
+  border-radius: 5px;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+#project-4 {
+  grid-area: project-4;
+  background-image: url(../images/02-portfolio-4.jpg);
+  border-radius: 5px;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+

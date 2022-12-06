@@ -11,7 +11,7 @@
   <body>
     <!-- main logo / nav -->
     <header>
-      <nav>
+      <nav id="navbar">
         <h1 class="logo">Sam Hendry</h1>
         <ul class="nav-links">
           <li class="nav-link"><a href="#about">About</a></li>
@@ -31,7 +31,7 @@
     <main class="page-wrapper">
       <!-- about me -->
       <section class="page-section" id="about">
-        <h2 class="subheading-border">About Me</h2>
+        <h2>About Me</h2>
         <p class="content-container">
           My name is Sam Hendry and I am an aspiring Web Developer. I am
           currently an enrolled bootcamp student with Edx and my main
@@ -43,13 +43,31 @@
 
       <!-- portfolio container -->
       <section class="page-section" id="work">
-        <h2 class="subheading-border">Work</h2>
+        <h2>Work</h2>
+        <div id="portfolio-grid">
+          <div id="project-1" class="portfolio-grid-area expand">
+            <h3 class="card-heading">Security Apps project</h3>
+          </div>
+          <div id="project-2" class="portfolio-grid-area">
+            <h3 class="card-heading">Code Refactoring Project</h3>
+          </div>
+          <div id="project-3" class="portfolio-grid-area">
+            <h3 class="card-heading">CSS Project</h3>
+          </div>
+          <div id="project-4" class="portfolio-grid-area">
+            <h3 class="card-heading">JavaScript Project</h3>
+          </div>
+        </div>
       </section>
 
       <!-- contact -->
       <section class="page-section contact" id="contact">
-        <h2 class="subheading-border">Contact Me</h2>
+        <h2>Contact Me</h2>
       </section>
+
+      <footer id="footer">
+        <ul></ul>
+      </footer>
     </main>
   </body>
 </html>
