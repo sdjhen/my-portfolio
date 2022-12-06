@@ -72,19 +72,18 @@ body {
 }
 
 /* Grid Layout */
-.portfolio-grid-area {
+ .portfolio-grid-area {
   display: grid;
-  min-height: 200px;
+  min-height: 300px;
   height: 50vh;
-  grid-template-rows: 200px 200px 200px 200px 200px;
-  grid-template-columns: 1fr;
+   grid-template-rows: 200px 200px 200px 200px 200px;
+  grid-template-columns: 1fr 1fr; 
   grid-template-areas: 
-  "project-1"
-  "project-2"
-  "project-3"
-  "project-4"
-  ;
-  margin: 25px;
+  "project-1 project-2"
+  "project-3 project-4" 
+  
+  ; 
+  
 }
 
 .expand {
@@ -107,7 +106,8 @@ overflow: hidden;
   grid-area: project-1;
   background-image: url(../images/02-portfolio-1.jpg);
   border-radius: 5px;
-  width: 50%;
+  height: 50px;
+  width: 90%;
   display: block;
   margin: auto;
 }
@@ -116,7 +116,8 @@ overflow: hidden;
   grid-area: project-2;
   background-image: url(../images/02-portfolio-2.jpg);
   border-radius: 5px;
-  width: 50%;
+  height: 45px;
+  width: 85%;
   display: block;
   margin: auto;
 }
@@ -125,7 +126,8 @@ overflow: hidden;
   grid-area: project-3;
   background-image: url(../images/02-portfolio-3.jpg);
   border-radius: 5px;
-  width: 50%;
+  height: 45px;
+  width: 85%;
   display: block;
   margin: auto;
 }
@@ -134,7 +136,8 @@ overflow: hidden;
   grid-area: project-4;
   background-image: url(../images/02-portfolio-4.jpg);
   border-radius: 5px;
-  width: 50%;
+  height: 45px;
+  width: 85%;
   display: block;
   margin: auto;
 }
